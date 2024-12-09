@@ -34,7 +34,7 @@ Coming soon!
 
 - Download the condition weights from [ControlNet](https://huggingface.co/lllyasviel/ControlNet/tree/main/annotator/ckpts) and place them in the models folder to train depth and normal FG-DMs. 
 
-- Alternatively download all these models by running download_models.sh file under scripts directory.
+- Alternatively download all these models by running [download_models.sh](scripts/download_models.sh) file under scripts directory.
 
 ## Inference: Text-to-Image with FG-DM
 
