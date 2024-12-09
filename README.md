@@ -28,9 +28,11 @@ Coming soon!
 
 - We used sdv1.4 weights for training FG-DM conditions but sdv1.5 is also compatible:
 
+- The original SD weights are available via [the CompVis organization at Hugging Face](https://huggingface.co/CompVis). The license terms are identical to the original weights.
+
 - `sd-v1-4.ckpt`: Resumed from `sd-v1-2.ckpt`. 225k steps at resolution `512x512` on "laion-aesthetics v2 5+" and 10\% dropping of the text-conditioning to improve [classifier-free guidance sampling](https://arxiv.org/abs/2207.12598).
 
-- The original SD weights are available via [the CompVis organization at Hugging Face](https://huggingface.co/CompVis). The license terms are identical to the original weights.
+- Download the condition weights from [ControlNet](https://huggingface.co/lllyasviel/ControlNet/tree/main/annotator/ckpts) and place them in the models folder to train depth and normal FG-DMs. 
 
 ## Inference: Text-to-Image with FG-DM
 
