@@ -15,6 +15,5 @@ logs
 temp
 ckpt
 taming
-data/
 *.egg-info
 *.json
