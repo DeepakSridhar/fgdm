@@ -23,7 +23,7 @@ conda activate ldm
 ## FG-DM Weights
 
 
-Coming soon!
+The segmentation model weights are available on [Google Drive](https://drive.google.com/drive/folders/1eIJxYE3eX5zReosGN1SQdnEDLatZuEp1?usp=sharing)
 
 
 - We used sdv1.4 weights for training FG-DM conditions but sdv1.5 is also compatible:
