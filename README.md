@@ -20,11 +20,18 @@ conda activate ldm
 ```
 
 
-## FG-DM Weights
+## FG-DM Pretrained Weights
 
 
-The segmentation model weights are available on [Google Drive](https://drive.google.com/drive/folders/1eIJxYE3eX5zReosGN1SQdnEDLatZuEp1?usp=sharing)
+The segmentation FGDM weights are available on [Google Drive](https://drive.google.com/drive/folders/1eIJxYE3eX5zReosGN1SQdnEDLatZuEp1?usp=sharing)
 
+## Inference: Text-to-Image with FG-DM
+
+```
+bash run_inference.sh
+```
+
+## Training: FG-DM Seg from scratch
 
 - We used sdv1.4 weights for training FG-DM conditions but sdv1.5 is also compatible:
 
@@ -36,13 +43,6 @@ The segmentation model weights are available on [Google Drive](https://drive.goo
 
 - Alternatively download all these models by running [download_models.sh](scripts/download_models.sh) file under scripts directory.
 
-## Inference: Text-to-Image with FG-DM
-
-```
-bash run_inference.sh
-```
-
-## Training: FG-DM Seg
 ```
 python main.py --base configs/stable-diffusion/nautilus_coco_adapter_semantic_map_gt_captions_distill_loss.yaml -t --gpus 0,
 ```
