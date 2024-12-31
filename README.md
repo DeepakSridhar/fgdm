@@ -26,7 +26,7 @@ We used COCO17 dataset for training FG-DMs.
 Annotations: Includes caption and instance annotations.
 Images: Includes train2017, val2017, and test2017.
 2. Extract Files
-Extract all downloaded files into the /data/coco directory.
+Extract all downloaded files into the /data/coco directory or to your desired location.
 Place the annotation files in the annotations/ folder.
 Place the image folders in the images/ folder.
 3. Verify the Directory Structure
@@ -34,25 +34,25 @@ Ensure that your directory structure matches as outlined below.
 
 coco/
 
-├── annotations/
+|---- annotations/
 
-│   ├── captions_train2017.json
+|------- captions_train2017.json
 
-│   ├── captions_val2017.json
+|------- captions_val2017.json
 
-│   ├── instances_train2017.json
+|------- instances_train2017.json
 
-│   ├── instances_val2017.json
+|------- instances_val2017.json
 
-│   ├── train2017/
+|------- train2017/
 
-│   ├── val2017/
+|------- val2017/
 
-├── images/
+|---- images/
 
-│   ├── train2017/
+|------- train2017/
 
-│   ├── val2017/
+|------- val2017/
 
 
 
