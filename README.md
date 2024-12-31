@@ -59,7 +59,7 @@ coco/
 ## FG-DM Pretrained Weights
 
 
-The segmentation FGDM weights are available on [Google Drive](https://drive.google.com/drive/folders/1eIJxYE3eX5zReosGN1SQdnEDLatZuEp1?usp=sharing)
+The segmentation FGDM weights are available on [Google Drive](https://drive.google.com/drive/folders/1eIJxYE3eX5zReosGN1SQdnEDLatZuEp1?usp=sharing) Place them under models directory
 
 ## Inference: Text-to-Image with FG-DM
 
