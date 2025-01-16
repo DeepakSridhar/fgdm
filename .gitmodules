@@ -1,0 +1,3 @@
+[submodule "segmented_image_editor"]
+	path = segmented_image_editor
+	url = https://github.com/rohithreddy0087/segmented_image_editor.git
