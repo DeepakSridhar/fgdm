@@ -9,6 +9,12 @@ _[NeurIPS '24](https://deepaksridhar.github.io/factorgraphdiffusion.github.io/st
 
 
 ![fg-dm](data/arch.jpg)
+
+## Cloning
+Use `--recursive` to also clone the segmentation editor app
+```
+git clone --recursive https://github.com/DeepakSridhar/fgdm.git
+```
   
 ## Requirements
 A suitable [conda](https://conda.io/) environment named `ldm` can be created
