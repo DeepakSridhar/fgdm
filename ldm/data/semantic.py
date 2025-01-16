@@ -144,7 +144,7 @@ def load_data(
         all_files = _list_image_files_recursively(os.path.join(data_dir, 'images', 'train2017' if is_train else 'val2017'))
         classes = _list_image_files_recursively(os.path.join(data_dir, 'annotations', 'train2017' if is_train else 'val2017'))
         poses = None
-        instances = _list_image_files_recursively(os.path.join(data_dir, 'annotations', 'traininstance' if is_train else 'valinstance'))
+        instances = None #_list_image_files_recursively(os.path.join(data_dir, 'annotations', 'traininstance' if is_train else 'valinstance'))
     elif dataset_mode == 'sample':
         # For sampling during inference mode
         all_files = _list_image_files_recursively(os.path.join(data_dir, 'sample1'))

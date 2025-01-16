@@ -19,12 +19,55 @@ conda env create -f fgdm.yaml
 conda activate ldm
 ```
 
+### Dataset
+We used COCO17 dataset for training FG-DMs. 
 
-## FG-DM Weights
+1. You can download the COCO 2017 dataset from the official [COCO Dataset Website](https://cocodataset.org/#download). Download the following components:
+Annotations: Includes caption and instance annotations.
+Images: Includes train2017, val2017, and test2017.
+2. Extract Files
+Extract all downloaded files into the /data/coco directory or to your desired location.
+Place the annotation files in the annotations/ folder.
+Place the image folders in the images/ folder.
+3. Verify the Directory Structure
+Ensure that your directory structure matches as outlined below.
+
+coco/
+
+|---- annotations/
+
+|------- captions_train2017.json
+
+|------- captions_val2017.json
+
+|------- instances_train2017.json
+
+|------- instances_val2017.json
+
+|------- train2017/
+
+|------- val2017/
+
+|---- images/
+
+|------- train2017/
+
+|------- val2017/
 
 
-The segmentation model weights are available on [Google Drive](https://drive.google.com/drive/folders/1eIJxYE3eX5zReosGN1SQdnEDLatZuEp1?usp=sharing)
 
+## FG-DM Pretrained Weights
+
+
+The segmentation FGDM weights are available on [Google Drive](https://drive.google.com/drive/folders/1eIJxYE3eX5zReosGN1SQdnEDLatZuEp1?usp=sharing) Place them under models directory
+
+## Inference: Text-to-Image with FG-DM
+
+```
+bash run_inference.sh
+```
+
+## Training: FG-DM Seg from scratch
 
 - We used sdv1.4 weights for training FG-DM conditions but sdv1.5 is also compatible:
 
@@ -36,13 +79,6 @@ The segmentation model weights are available on [Google Drive](https://drive.goo
 
 - Alternatively download all these models by running [download_models.sh](scripts/download_models.sh) file under scripts directory.
 
-## Inference: Text-to-Image with FG-DM
-
-```
-bash run_inference.sh
-```
-
-## Training: FG-DM Seg
 ```
 python main.py --base configs/stable-diffusion/nautilus_coco_adapter_semantic_map_gt_captions_distill_loss.yaml -t --gpus 0,
 ```
